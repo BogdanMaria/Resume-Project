@@ -196,9 +196,16 @@
         </div>
 
     </footer>
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
-    <script src="assets/js/maps.js"></script>
+ <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+ <script>
+    function initMap() {
+    const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+    center: { lat: -33.9, lng: 151.2 },
+    });
+
+</script>    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZr7iy2a-KcH9e0pknLSu4lRT71agn4EE&callback=initMap&v=weekly" defer></script>
 </body>
 
 </html>
